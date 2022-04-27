@@ -26,7 +26,7 @@
         <ul class="ul_dc_logo">
             @foreach ($arraymainbar as $item)
             <li class="li_dc_logo">
-              <img class="dc_logo_pictures" src="{{url($item['img'])}} alt="" />
+              <img class="dc_logo_pictures" src="{{url($item['img'])}}" alt="" />
               <a class="link_dc_logo" href="#">{{ $item['text'] }}</a>
             </li>
             @endforeach
