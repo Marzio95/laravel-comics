@@ -19,6 +19,8 @@ Route::get('/', function () {
     $arrayfooter2 = config('arrayfooter2');
     $arrayfooter3 = config('arrayfooter3');
     $arrayfooter4 = config('arrayfooter4');
+    $arraycard = config('arraycard');
+    $arraymainbar = config('arraymainbar');
 
     $data = [
         'arraynavbar' => $arraynavbar,
@@ -26,6 +28,9 @@ Route::get('/', function () {
         'arrayfooter2' => $arrayfooter2,
         'arrayfooter3' => $arrayfooter3,
         'arrayfooter4' => $arrayfooter4,
+        'arraycard' => $arraycard,
+        'arraymainbar' => $arraymainbar,
+
     ];
     return view('guest.template.home', $data);
 });

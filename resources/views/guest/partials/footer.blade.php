@@ -16,8 +16,8 @@
               <ul>
                 <h3>DC COMICS</h3>
                 @foreach ($arrayfooter1 as $item)
-                <li>
-                  <a href="#">{{ $item['text'] }}</a>
+                <li class="li">
+                  <a class="link_footer" href="#">{{ $item['text'] }}</a>
                 </li> 
                 @endforeach
               </ul>
@@ -25,8 +25,8 @@
               <ul>
                 <h3>SHOP</h3>
                 @foreach ($arrayfooter2 as $item)
-                <li>
-                  <a href="#">{{ $item['text'] }}</a>
+                <li class="li">
+                  <a class="link_footer" href="#">{{ $item['text'] }}</a>
                 </li> 
                 @endforeach
               </ul>
@@ -36,8 +36,8 @@
               <ul>
                 <h3>DC</h3>
                 @foreach ($arrayfooter3 as $item)
-                <li>
-                  <a href="#">{{ $item['text'] }}</a>
+                <li class="li">
+                  <a class="link_footer" href="#">{{ $item['text'] }}</a>
                 </li> 
                 @endforeach
               </ul>
@@ -47,8 +47,8 @@
               <ul>
                 <h3>SITES</h3>
                 @foreach ($arrayfooter4 as $item)
-                <li>
-                  <a href="#">{{ $item['text'] }}</a>
+                <li class="li">
+                  <a class="link_footer" href="#">{{ $item['text'] }}</a>
                 </li> 
                 @endforeach
               </ul>
@@ -56,21 +56,21 @@
           </div>
     
           <div class="col_right">
-            <img src={{url('/images/dc-logo-bg.png')}} alt="" />
+            <img class="logo_big" src={{url('/images/dc-logo-bg.png')}} alt="" />
           </div>
         </div>
         <div class="edit">
           <div class="col_edit_left">
-            <button>SIGN-UP NOW!</button>
+            <button class="button">SIGN-UP NOW!</button>
           </div>
     
           <div class="col_edit_right">
             <div class="follow">FOLLOW US</div>
-            <img src={{url('/images/footer-facebook.png')}} alt="" />
-            <img src={{url('/images/footer-twitter.png')}} alt="" />
-            <img src={{url('/images/footer-youtube.png')}} alt="" />
-            <img src={{url('/images/footer-pinterest.png')}} alt="" />
-            <img src={{url('/images/footer-periscope.png')}} alt="" />
+            <img class="logos" src={{url('/images/footer-facebook.png')}} alt="" />
+            <img class="logos" src={{url('/images/footer-twitter.png')}} alt="" />
+            <img class="logos" src={{url('/images/footer-youtube.png')}} alt="" />
+            <img class="logos" src={{url('/images/footer-pinterest.png')}} alt="" />
+            <img class="logos" src={{url('/images/footer-periscope.png')}} alt="" />
           </div>
         </div>
       </div>
