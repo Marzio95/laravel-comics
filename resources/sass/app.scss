@@ -2,5 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: red;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.li_nav {
+    display: inline-block;
+    padding: 47px 1rem;
+    height: 100%;
+    border-bottom: 7px solid transparent;
+
+    &:hover {
+        border-bottom: 7px solid #0282f9;
+    }
+
+    &:hover .link_nav {
+        color: #0282f9;
+    }
+
+    .link_nav {
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }

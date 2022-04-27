@@ -29,6 +29,6 @@ return
             'text' => "news",
         ],
         [
-            'text' => "characters",
+            'text' => "shop",
         ],
     ];
