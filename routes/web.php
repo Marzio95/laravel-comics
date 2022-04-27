@@ -15,8 +15,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $arraynavbar = config('arraynavbar');
+    $arrayfooter1 = config('arrayfooter1');
+    $arrayfooter2 = config('arrayfooter2');
+    $arrayfooter3 = config('arrayfooter3');
+    $arrayfooter4 = config('arrayfooter4');
+
     $data = [
-        'arraynavbar' => $arraynavbar
+        'arraynavbar' => $arraynavbar,
+        'arrayfooter1' => $arrayfooter1,
+        'arrayfooter2' => $arrayfooter2,
+        'arrayfooter3' => $arrayfooter3,
+        'arrayfooter4' => $arrayfooter4,
     ];
     return view('guest.template.home', $data);
 });
