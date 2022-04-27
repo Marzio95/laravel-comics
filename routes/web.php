@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $arraynavbar = config('arraynavbar');
+    $data = [
+        'arraynavbar' => $arraynavbar
+    ];
+    return view('guest.template.home', $data);
 });
